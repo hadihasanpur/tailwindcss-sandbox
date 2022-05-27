@@ -9,9 +9,13 @@ module.exports = {
     extend: {
       lineHeight: {
         '0': '0',
+      },
+      padding: {
+        '1/3':'33.333333%',
+        '2/3' : '66.6666%'
       }
     },
   },
   
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 }

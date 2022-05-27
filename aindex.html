@@ -21,10 +21,11 @@
 
     <link rel="stylesheet" href="./dist/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style></style>
   </head>
 
   <body class="font-vazir dark:bg-gray-900">
-    <div class="mycontainer">
+    <div class="grid-container">
       <header class="shadow-lg header">
         <div class="container px-10 py-4 mx-auto">
           <nav class="relative flex items-center justify-between">
@@ -170,152 +171,170 @@
         </div>
       </header>
 
-      <section>
-        <div class="container px-20 py-4 lg:px-20">
-          <div id="first_news">
-            <div class="flex flex-col items-center lg:flex-row gap-x-25">
-              <div data-aos="fade-up" class="mt-8 lg:mt-0">
-                <h1 class="mb-5 text-2xl font-bold dark:text-white">
-                  لورم ایپسوم <span class="text-indigo-600">متن ساختگی</span>
-                </h1>
-                <p
-                  class="mb-6 leading-8 text-justify text-gray-700 dark:text-white"
-                >
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                  کاربردی می باشد.
-                </p>
-                <button class="btn btn-primary">لورم ایپسوم</button>
-                <button class="mr-2 btn btn-secondary">لورم ایپسوم متن</button>
-              </div>
-              <img
-                data-aos="fade-up"
-                data-aos-delay="300"
-                src="./dist/images/modiran/001119 (2).jpeg"
-                all=""
-                class="h-auto max-w-full align-middle border-none rounded shadow"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div style="height: 100px; overflow: hidden">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%"
-        >
-          <path
-            class="fill-gray-100 dark:fill-gray-800"
-            d="M-37.02,164.10 C328.66,20.03 595.03,10.16 618.74,-65.81 L500.00,150.00 L0.00,150.00 Z"
-          ></path>
-        </svg>
-      </div>
-      <section class="bg-gray-100 dark:bg-gray-800 service">
-        <div class="container px-10 py-4 mx-auto lg:w-4/5 lg:px-20">
-          <div
+      <section class="flex flex-row-reverse content">
+          <div class="basis-1/2">
+          <img
+            class="object-scale-down w-auto h-48 px-6 mt-8 rounded-lg shadow-lg "
             data-aos="fade-up"
-            data-aos-delay="150"
-            class="mb-12 text-center"
+            data-aos-delay="300"
+            src="./dist/images/modiran/me3.jpg"
+          /> 
+        </div>  
+        <div
+          id="topnew"
+          data-aos="fade-up"
+          class="w-64 mt-0 lg:mt-0 grow-0 basis-3/5"
+        >
+          <h1 class="mt-5 mb-5 text-2xl font-bold text-center dark:text-white">
+            عنوان ایپسوم <span class="text-indigo-600">متن ساختگی</span>
+          </h1>
+          <p
+            class="px-10 mb-12 leading-8 text-justify text-gray-700 dark:text-white indent-16"
           >
-            <h1 class="mb-5 text-2xl font-bold dark:text-white">
-              لورم ایپسوم
-              <span class="text-indigo-600">متن ساختگی</span>
-            </h1>
-            <p class="mb-6 leading-8 text-gray-700 dark:text-white">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است.
-            </p>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="200"
-            class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 dark:text-white"
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+          </p>
+          <button class="btn btn-primary">لورم ایپسوم</button>
+          <button class="btn btn-secondary">لورم ایپسوم متن</button>
+        </div>
+      
+      </section>
+      <section id="sidebar" class="">
+        <div
+          class="justify-center aspect-w-2 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 lg:aspect-w-1 lg:aspect-h-4"
+        >
+          <img
+            class="justify-center object-scale-down px-6 py-6 mt-8 rounded-lg shadow-lg"
+            data-aos="fade-down"
+            data-aos-delay="400"
+            src="./dist/images/modiran/me2.jpg"
+            all="33"
+          />
+          <p
+            class="px-4 mt-4 mb-6 leading-8 text-justify text-gray-700 dark:text-white"
           >
-            <div class="flex">
-              <div>
-                <i
-                  class="fas fa-shield-alt text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
-                ></i>
-              </div>
-              <p class="mr-5">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
-              </p>
-            </div>
-            <div class="flex">
-              <div>
-                <i
-                  class="fas fa-headset text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
-                ></i>
-              </div>
-              <p class="mr-5">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
-              </p>
-            </div>
-            <div class="flex">
-              <div>
-                <i
-                  class="fas fa-sliders-h text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
-                ></i>
-              </div>
-              <p class="mr-5">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
-              </p>
-            </div>
-            <div class="flex">
-              <div>
-                <i
-                  class="fas fa-comment text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
-                ></i>
-              </div>
-              <p class="mr-5">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
-              </p>
-            </div>
-            <div class="flex">
-              <div>
-                <i
-                  class="fas fa-chart-line text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
-                ></i>
-              </div>
-              <p class="mr-5">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
-              </p>
-            </div>
-            <div class="flex">
-              <div>
-                <i
-                  class="fas fa-box text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
-                ></i>
-              </div>
-              <p class="mr-5">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
-              </p>
-            </div>
-          </div>
+            لورم ایپسوم متن ساختگی با تولید سادگی ا
+          </p>
         </div>
       </section>
-      <div style="height: 100px; overflow: hidden">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%"
-        >
-          <path
-            class="fill-gray-100 dark:fill-gray-800"
-            d="M-12.19,148.31 C145.82,120.69 576.41,-24.36 565.12,-20.42 L499.66,-2.66 L0.00,0.00 Z"
-          ></path>
-        </svg>
-      </div>
+      <section class="service">
+        <div style="height: 100px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              class="fill-gray-100 dark:fill-gray-800"
+              d="M-37.02,164.10 C328.66,20.03 595.03,10.16 618.74,-65.81 L500.00,150.00 L0.00,150.00 Z"
+            ></path>
+          </svg>
+        </div>
+        <section class="bg-gray-100 dark:bg-gray-800">
+          <div class="container px-10 py-4 mx-auto lg:w-4/5 lg:px-20">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              class="mb-2 text-center"
+            >
+              <h1 class="mb-5 text-2xl font-bold bg-black dark:text-white">
+                لورم ایپسوم
+                <span class="text-indigo-600">متن ساختگی</span>
+              </h1>
+              <p class="leading-8 text-gray-700 dark:text-white">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 dark:text-white"
+            >
+              <div class="flex">
+                <div>
+                  <i
+                    class="fas fa-shield-alt text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
+                  ></i>
+                </div>
+                <p class="mr-5">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
+                </p>
+              </div>
+              <div class="flex">
+                <div>
+                  <i
+                    class="fas fa-headset text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
+                  ></i>
+                </div>
+                <p class="mr-5">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
+                </p>
+              </div>
+              <div class="flex">
+                <div>
+                  <i
+                    class="fas fa-sliders-h text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
+                  ></i>
+                </div>
+                <p class="mr-5">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
+                </p>
+              </div>
+              <div class="flex">
+                <div>
+                  <i
+                    class="fas fa-comment text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
+                  ></i>
+                </div>
+                <p class="mr-5">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
+                </p>
+              </div>
+              <div class="flex">
+                <div>
+                  <i
+                    class="fas fa-chart-line text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
+                  ></i>
+                </div>
+                <p class="mr-5">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
+                </p>
+              </div>
+              <div class="flex">
+                <div>
+                  <i
+                    class="fas fa-box text-[2rem] p-4 rounded-full border border-1 border-indigo-600 text-indigo-600"
+                  ></i>
+                </div>
+                <p class="mr-5">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div style="height: 100px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              class="fill-gray-100 dark:fill-gray-800"
+              d="M-12.19,148.31 C145.82,120.69 576.41,-24.36 565.12,-20.42 L499.66,-2.66 L0.00,0.00 Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
 
       <section class="price">
         <div class="container px-10 py-4 mx-auto lg:w-4/5 lg:px-20">
@@ -418,7 +437,7 @@
           >
             <h1 class="mb-5 text-2xl font-bold dark:text-white">
               لورم ایپسوم
-              <span class="text-indigo-600"> گالری متن ساختگی</span>
+              <span class="text-indigo-600">متن ساختگی</span>
             </h1>
             <p class="mb-6 leading-8 text-gray-700 dark:text-white">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -453,19 +472,19 @@
         </div>
       </section>
 
-      <div style="height: 100px; overflow: hidden">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%"
-        >
-          <path
-            class="fill-gray-100 dark:fill-gray-800"
-            d="M-37.02,164.10 C328.66,20.03 595.03,10.16 618.74,-65.81 L500.00,150.00 L0.00,150.00 Z"
-          ></path>
-        </svg>
-      </div>
       <section class="footer">
+        <div style="height: 100px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              class="fill-gray-100 dark:fill-gray-800"
+              d="M-37.02,164.10 C328.66,20.03 595.03,10.16 618.74,-65.81 L500.00,150.00 L0.00,150.00 Z"
+            ></path>
+          </svg>
+        </div>
         <footer class="bg-gray-100 dark:bg-gray-800">
           <div class="container px-10 py-4 mx-auto lg:px-20">
             <div class="flex flex-col items-center justify-between lg:flex-row">
