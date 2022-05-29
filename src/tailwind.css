@@ -42,6 +42,13 @@
   .form-input {
     @apply w-full border border-gray-300 mt-3 py-2 px-3 rounded focus:outline-none focus:ring-4 focus:ring-opacity-50 focus:ring-indigo-600 dark:bg-gray-800;
   }
+
+  .card {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+  }
 }
 
 @layer utilities {
@@ -57,6 +64,7 @@
   grid-template-areas:
     "header  header header header header header header header"
     "content content content content content content content sidebar"
+    "new new new new new new new new"
     "service  service service service service service service service"
     "price price price price price price price price"
     "galery galery galery galery galery galery galery galery"
@@ -99,6 +107,9 @@
 #sidebar {
   grid-area: sidebar;
 }
+#new {
+  grid-area: new;
+}
 
 .service {
   grid-area: service;
@@ -124,16 +135,34 @@
 .footer,
 #topnew,
 #topimg {
-  border: 1px solid rgba(15, 15, 15, 0.8);
+  border: 0px solid rgba(15, 15, 15, 0.8);
 }
-.grid-top {
-  display: grid;
-  grid-template-cols: 40% 60%;
 
+.grid_top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
-.item{
-  flex: 1;
+.w-80 {
+  width: 80%;
 }
-.item:first-child{
-  flex: 3;
+.h-80 {
+  height: 80%;
 }
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.mb-5 {
+  margin-bottom: 1.25rem; /* 20px */
+}
+.mt-2 {
+  margin-top: 0.5rem; /* 8px */
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.indent-2 {
+  text-indent: 0.5rem; /* 8px */
+}
+.indent-16	{text-indent: 4rem; /* 64px */}
