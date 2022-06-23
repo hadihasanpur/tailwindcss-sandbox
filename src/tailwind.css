@@ -60,7 +60,7 @@
   }
   .grid_fnew {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 1fr;
   }
 
   grid_top_sm {
@@ -218,3 +218,4 @@
 .content-center {
   align-content: center;
 }
+.bg-slate-600	{background-color: rgb(71 85 105);}
