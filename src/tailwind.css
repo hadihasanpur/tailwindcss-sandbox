@@ -45,6 +45,8 @@
 }
 
 @layer utilities {
+.grid-cols-12	{grid-template-columns: repeat(12, minmax(0, 1fr));}
+
  .bottom-10	{bottom: 2.5rem; /* 40px */}
  .right-1	{right: 0.25rem; /* 4px */}
  .backdrop-opacity-50	{backdrop-filter: opacity(0.5);}
