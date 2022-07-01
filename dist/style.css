@@ -616,16 +616,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 2.5rem;
 }
 
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -641,6 +633,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mr-2 {
@@ -699,6 +701,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -753,10 +759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -795,10 +797,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .gap-1 {
@@ -857,6 +855,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -864,6 +866,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border {
   border-width: 1px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-t-8 {
@@ -886,6 +892,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-indigo-600 {
   --tw-border-opacity: 1;
   border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+
+.border-cyan-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 78 99 / var(--tw-border-opacity));
+}
+
+.border-b-lime-200 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(217 249 157 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -992,6 +1008,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-indent: 4rem;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-vazir {
   font-family: Vazir;
 }
@@ -1024,6 +1044,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1038,6 +1063,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .leading-0 {
@@ -1100,6 +1129,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1120,8 +1159,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.grid-cols-12	{
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+.border-b-lime-200	{
+  border-bottom-color: rgb(217 249 157);
+}
+
+.text-sm	{
+  font-size: 0.875rem;
+  /* 14px */
+}
+
+line-height: 1.25rem;
+
+/* 20px */
+
+.text-xl	{
+  font-size: 1.25rem;
+  /* 20px */
+  line-height: 1.75rem;
+  /* 28px */
+}
+
+.text-base	{
+  font-size: 1rem;
+  /* 16px */
+  line-height: 1.5rem;
+  /* 24px */
+}
+
+.border-1	{
+  border-width: 1px;
+}
+
+.font-black	{
+  font-weight: 900;
 }
 
 .fill-gray-100 {
@@ -1336,6 +1406,11 @@ grid_top_sm {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .dark .dark\:fill-gray-800 {
   fill: #1f2937;
 }
@@ -1393,6 +1468,19 @@ grid_top_sm {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .lg\:float-right {
+    float: right;
+  }
+
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1401,8 +1489,16 @@ grid_top_sm {
     display: grid;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:w-4\/5 {
     width: 80%;
+  }
+
+  .lg\:w-64 {
+    width: 16rem;
   }
 
   @media (min-width: 1024px) {
@@ -1423,6 +1519,10 @@ grid_top_sm {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1435,6 +1535,27 @@ grid_top_sm {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:w-64	{
+    width: 16rem;
+    /* 256px */
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:lg\:max-w-sm	{
+      max-width: 24rem;
+      /* 384px */
+    }
+  }
+
+  .lg\:max-w-sm	{
+    max-width: 24rem;
+    /* 384px */
+  }
+
+  .lg\:grid-cols-12	{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .lg\:grid_container_lg {
@@ -1458,5 +1579,18 @@ grid_top_sm {
 
   .xl\:hidden {
     display: none;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    /* 20px */
+    line-height: 1.75rem;
+    /* 28px */
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 }

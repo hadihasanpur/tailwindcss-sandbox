@@ -3,6 +3,7 @@ module.exports = {
   content: ['./index.html','./index2.html'],
   darkMode: 'class', // or 'media' or 'class' 
   theme: {
+   
     fontFamily: {
       vazir: ['Vazir']
     },
