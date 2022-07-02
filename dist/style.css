@@ -759,6 +759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -1159,6 +1163,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.px-2	{
+  padding-left: 0.5rem;
+  /* 8px */
+  padding-right: 0.5rem;
+  /* 8px */
+}
+
 .border-b-lime-200	{
   border-bottom-color: rgb(217 249 157);
 }
@@ -1430,6 +1441,13 @@ grid_top_sm {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    /* 8px */
+    padding-right: 0.5rem;
+    /* 8px */
+  }
+
   .sm\:grid_container_sm {
     display: grid;
     grid-template-areas:
@@ -1451,6 +1469,17 @@ grid_top_sm {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    /* 8px */
+    padding-right: 0.5rem;
+    /* 8px */
   }
 
   .md\:grid_container_md {
@@ -1523,6 +1552,10 @@ grid_top_sm {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1581,6 +1614,10 @@ grid_top_sm {
     display: none;
   }
 
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .xl\:text-xl {
     font-size: 1.25rem;
     /* 20px */
@@ -1590,6 +1627,40 @@ grid_top_sm {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .\32xl\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .\32xl\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .\32xl\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .\32xl\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .\32xl\:container {
+      max-width: 1536px;
+    }
+  }
+
   .\32xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }
